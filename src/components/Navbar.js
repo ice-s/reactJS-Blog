@@ -1,7 +1,23 @@
 import React, {Component} from 'react';
 
 class Navbar extends Component {
+	constructor(props) {
+		//console.log("constructor Navbar")
+        super(props);
+        this.state = { color: 'green' };
+    }
+    componentWillMount() {
+        //console.log("componentWillMount Navbar")
+    }
+
+    componentDidMount() {
+        //console.log("componentDidMount Navbar")
+    }
+
+
     render() {
+    	//console.log("render Navbar");
+
         return (
             <nav className="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
             	<button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
